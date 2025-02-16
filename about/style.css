@@ -122,7 +122,38 @@ body {
   margin-left:30px;
 }
 
-.contact p {
-  margin: 5px 0;
-}
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
 
+  .left-content {
+    margin-right: 0; /* 移动端去除右边距 */
+    align-items: center; /* 让内容居中 */
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 150px; /* 缩小图片大小 */
+    height: auto;
+    margin-top: 20px; /* 调整顶部间距 */
+  }
+
+  .text-content {
+    padding: 0 20px;
+    max-width: 100%; /* 让文本区域不会超出屏幕 */
+  }
+
+  .skills {
+    justify-content: center; /* 让技能图标居中 */
+    flex-wrap: wrap; /* 让图标换行显示 */
+  }
+
+  .skills img {
+    width: 35px; /* 缩小图标 */
+    height: 35px;
+  }
+}
